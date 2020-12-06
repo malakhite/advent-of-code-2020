@@ -1,7 +1,7 @@
 use std::{error};
 use std::fs::{canonicalize};
 
-pub fn day3_part1() -> Result<(), Box<dyn error::Error>> {
+pub fn part1() -> Result<(), Box<dyn error::Error>> {
     let mut grid: Vec<Vec<char>> = Vec::new();
     let path = canonicalize("./puzzle-input/day3.1.txt")?;
     let contents = super::util::read_lines(path)?;
@@ -47,7 +47,7 @@ fn count_trees(across: usize, down: usize) -> Result<u64, Box<dyn error::Error>>
     Ok(trees)
 }
 
-pub fn day3_part2() -> Result<(), Box<dyn error::Error>> {
+pub fn part2() -> Result<(), Box<dyn error::Error>> {
     let a = count_trees(1, 1)?;
     let b = count_trees(3, 1)?;
     let c = count_trees(5, 1)?;

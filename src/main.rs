@@ -1,42 +1,63 @@
 mod util;
-
 mod day1;
-use day1::{day1_part1, day1_part2};
-
 mod day2;
-use day2::{day2_part1, day2_part2};
-
 mod day3;
-use day3::{day3_part1, day3_part2};
+mod day4;
+mod day5;
+mod day6;
 
 fn main() {
-    match day1_part1() {
+    match day1::part1() {
         Ok(_) => println!("Day 1 part 1 success"),
         Err(e) => println!("Error: {}", e),
     }
 
-    match day1_part2() {
+    match day1::part2() {
         Ok(_) => println!("Day 1 part 2 success"),
         Err(e) => println!("Error: {}", e),
     }
 
-    match day2_part1() {
+    match day2::part1() {
         Ok(_) => println!("Day 2 part 1 success"),
         Err(e) => println!("Error: {}", e),
     }
 
-    match day2_part2() {
+    match day2::part2() {
         Ok(_) => println!("Day 2 part 2 success"),
         Err(e) => println!("Error: {}", e),
     }
 
-    match day3_part1() {
+    match day3::part1() {
         Ok(_) => println!("Day 3 part 1 success"),
         Err(e) => println!("Error: {}", e),
     }
 
-    match day3_part2() {
-        Ok(_) => println!("Day 3 part 1 success"),
+    match day3::part2() {
+        Ok(_) => println!("Day 3 part 2 success"),
         Err(e) => println!("Error: {}", e),
     }
+
+    match day4::part1() {
+        Ok(_) => println!("Day 4 part 1 success"),
+        Err(e) => println!("Error: {}", e),
+    }
+
+    match day4::part2() {
+        Ok(_) => println!("Day 4 part 2 success"),
+        Err(e) => println!("Error: {}", e),
+    }
+
+    match day5::part1() {
+        Ok(_) => println!("Day 5 part 1 success"),
+        Err(e) => println!("Error: {}", e),
+    }
+
+    match day5::part2() {
+        Ok(_) => println!("Day 5 part 2 success"),
+        Err(e) => println!("Error: {}", e),
+    }
+
+    day6::part1();
+
+    day6::part2();
 }

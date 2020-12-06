@@ -1,7 +1,7 @@
 use std::{error};
 use std::fs::{canonicalize};
 
-pub fn day1_part1() -> Result<(), Box<dyn error::Error>> {
+pub fn part1() -> Result<(), Box<dyn error::Error>> {
     const TARGET: i64 = 2020;
     let mut v: Vec<i64> = Vec::new();
     let path = canonicalize("./puzzle-input/day1.1.txt")?;
@@ -25,7 +25,7 @@ pub fn day1_part1() -> Result<(), Box<dyn error::Error>> {
     Ok(())
 }
 
-pub fn day1_part2() -> Result<(), Box<dyn error::Error>> {
+pub fn part2() -> Result<(), Box<dyn error::Error>> {
     const TARGET: i64 = 2020;
     let mut v: Vec<i64> = Vec::new();
     let path = canonicalize("./puzzle-input/day1.1.txt")?;

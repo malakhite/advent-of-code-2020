@@ -14,7 +14,7 @@ fn parse_lines(s: String) -> Result<bool, Box<dyn error::Error>> {
     }
 }
 
-pub fn day2_part1() -> Result<(), Box<dyn error::Error>> {
+pub fn part1() -> Result<(), Box<dyn error::Error>> {
     let mut count: u32 = 0;
     let path = canonicalize("./puzzle-input/day2.1.txt")?;
     let contents = super::util::read_lines(path)?;
@@ -45,7 +45,7 @@ fn parse_lines2(s: String) -> Result<bool, Box<dyn error::Error>> {
     }
 }
 
-pub fn day2_part2() -> Result<(), Box<dyn error::Error>> {
+pub fn part2() -> Result<(), Box<dyn error::Error>> {
     let mut count: u32 = 0;
     let path = canonicalize("./puzzle-input/day2.1.txt")?;
     let contents = super::util::read_lines(path)?;
